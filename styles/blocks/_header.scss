@@ -1,0 +1,76 @@
+.header {
+    padding-top: 85px;
+    padding-bottom: 38px;
+    background-color: var(--color-white);
+
+    @include desktop {
+        padding-top: 30px;
+        padding-bottom: 29px;
+    }
+
+    @include mobile {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 47px;
+
+        @include desktop {
+            column-gap: 40px;
+        }
+    }
+
+    &__logo {
+        @include desktop {
+            width: 150px;
+            height: auto;
+        }
+
+        @include mobile {
+            max-width: 93px;
+        }
+    }
+
+    &__menu {
+        margin-left: auto;
+
+        &-list {
+            display: flex;
+            column-gap: 46px;
+
+            @include desktop {
+                column-gap: 22px;
+            }
+        }
+
+        &-link {
+            @include flex-center(true);
+            position: relative;
+            font-size: 17px;
+            font-weight: 500;
+            height: 48px;
+
+            @include hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 75%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 1px;
+                background-color: currentColor;
+                transition-duration: inherit;
+            }
+        }
+    }
+}

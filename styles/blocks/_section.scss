@@ -1,0 +1,24 @@
+.section {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+    }
+    
+    &__title {
+        font-size: clamp(24px, 3.19vw, 46px);
+    }
+
+    &__description {
+        font-size: clamp(18px, 1.59vw, 23px);
+        line-height: 1.13;
+        color: var(--color-grey);
+        text-align: center;
+        padding-bottom: 68px;
+
+        @include desktop {
+            padding-bottom: 55px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.card {
+    &__reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        padding: 39px 161px 39px 110px;
+
+        @include desktop {
+            margin: 0;
+        }
+
+        @include tablet {
+            padding: 39px 51px 39px 50px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            padding: 35px;
+            row-gap: 20px;
+        }
+    }
+}

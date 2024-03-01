@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tere</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo">
+          <img
+            src="./images/logo.svg"
+            alt="Tere"
+            class="logo__image"
+            loading="lazy"
+            width="180"
+            height="51"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">How tere works</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Tere benefits</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="header__button button button--small hidden-mobile"
+          type="button"
+        >
+          Help Center
+        </button>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          onclick="mobileOverlay.showModal()"
+        >
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section container">
+        <div class="section__body">
+          <div class="download">
+            <div class="download__body">
+              <h1 class="download__title">
+                Download app, <br />
+                save money, make <br />
+                frends!
+              </h1>
+              <div class="download__text">
+                <p>
+                  Its simple and its free. Play your part in reducing <br />
+                  Carbon Footprint and help Mother Nature to <br />
+                  sustain its beauty. So what are you waiting for? <br />
+                  Lets ride together
+                </p>
+              </div>
+              <div class="download__button-group">
+                <button
+                  class="download__button button-android button"
+                  type="button"
+                >
+                  DOWNLOAD
+                </button>
+                <button
+                  class="download__button button-ios button"
+                  type="button"
+                >
+                  DOWNLOAD
+                </button>
+              </div>
+            </div>
+            <img src="./images/image-1.svg" alt="" class="download__image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section__body">
+          <div class="get-link">
+            <div class="get-link__body">
+              <h2 class="get-link__title">
+                Let`s go. Get a link <br />
+                to dowload the app
+              </h2>
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                class="get-link__input"
+                id="email"
+                placeholder="Enter mobile phone number"
+              />
+              <button class="get-link__button button" type="submit">
+                APPLY TO DRIVE
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title">
+            HOW <span class="text--green">TERE</span> WORK
+          </h2>
+          <div class="section__description">
+            <p>
+              Download and install the tere app. Enter your phone <br />
+              number and make your user account, when approved you <br />
+              may start driving.
+            </p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="work">
+            <div class="work__group">
+              <div class="work__group-card">
+                <span class="work__number">1</span>
+                <h3 class="work__title">REQUEST A RIDE</h3>
+                <div class="work__description">
+                  <p>
+                    Have to reach office or going for shopping? Just put your
+                    current location and destination and search a ride that
+                    suits you
+                  </p>
+                </div>
+              </div>
+              <div class="work__group-card">
+                <span class="work__number">2</span>
+                <h3 class="work__title">POST A RIDE</h3>
+                <div class="work__description">
+                  <p>
+                    Going somewhere but hate to travel alone - just post your
+                    ride details and publish it
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="work__slider">
+              <img src="./images/phone.svg" alt="" class="work__image" />
+              <div class="work__actions">
+                <div class="work__pagination pagination">
+                  <ul class="pagination__list">
+                    <li class="pagination__item">
+                      <button
+                        class="pagination__button is-current"
+                        type="button"
+                      >
+                        <span class="visually-hidden">First slide</span>
+                        <svg
+                          width="13"
+                          height="14"
+                          viewBox="0 0 13 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="6.38601"
+                            cy="6.70315"
+                            r="6.38601"
+                            fill="#75BF7A"
+                          />
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="pagination__item">
+                      <button
+                        class="pagination__button is-current"
+                        type="button"
+                      >
+                        <span class="visually-hidden">First slide</span>
+                        <svg
+                          width="13"
+                          height="14"
+                          viewBox="0 0 13 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="6.38601"
+                            cy="6.70315"
+                            r="6.38601"
+                            fill="#75BF7A"
+                          />
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="pagination__item">
+                      <button
+                        class="pagination__button is-current"
+                        type="button"
+                      >
+                        <span class="visually-hidden">First slide</span>
+                        <svg
+                          width="13"
+                          height="14"
+                          viewBox="0 0 13 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="6.38601"
+                            cy="6.70315"
+                            r="6.38601"
+                            fill="#75BF7A"
+                          />
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="pagination__item">
+                      <button
+                        class="pagination__button is-current"
+                        type="button"
+                      >
+                        <span class="visually-hidden">First slide</span>
+                        <svg
+                          width="13"
+                          height="14"
+                          viewBox="0 0 13 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="6.38601"
+                            cy="6.70315"
+                            r="6.38601"
+                            fill="#75BF7A"
+                          />
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="pagination__title">
+                <span class="pagination__text text--green">TERE</span>
+                BENEFITS
+              </h3>
+            </div>
+            <div class="work__group">
+              <div class="work__group-card">
+                <span class="work__number">3</span>
+                <h3 class="work__title">INSTAIN NOTIFICATIONS</h3>
+                <div class="work__description">
+                  <p>
+                    Get instant notifications for your rides and be in contact
+                    with fellow riders all the time
+                  </p>
+                </div>
+              </div>
+              <div class="work__group-card">
+                <span class="work__number">4</span>
+                <h3 class="work__title">CASHLESS PAYMENT</h3>
+                <div class="work__description">
+                  <p>
+                    Payment made easy by using your own Wallet - no more cash to
+                    carry
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section__body">
+          <div class="advantages">
+            <ol class="advantages__list">
+              <li class="advantages__item">
+                <div class="advantages__text">
+                  <h3 class="advantages__title">
+                    Flexible <br />
+                    working hours
+                  </h3>
+                  <div class="advantages__description">
+                    <p>
+                      You can decide when, and how much <br />
+                      time you want to drive
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src="./images/2.svg"
+                  alt=""
+                  class="advantages__image"
+                  loading="lazy"
+                />
+              </li>
+              <li class="advantages__item card__reverse">
+                <div class="advantages__text">
+                  <h3 class="advantages__title">Earnings</h3>
+                  <div class="advantages__description">
+                    <p>
+                      By driving with tere you can <br />
+                      earn more.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src="./images/3.svg"
+                  alt=""
+                  class="advantages__image"
+                  loading="lazy"
+                />
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text">
+                  <h3 class="advantages__title">
+                    Customer <br />
+                    support 24/7
+                  </h3>
+                  <div class="advantages__description">
+                    <p>
+                      Tere is a local service provider and we are proud to
+                      support you in your local languages. We are proud <br />
+                      to be at your service 24/7!
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src="./images/4.svg"
+                  alt=""
+                  class="advantages__image"
+                  loading="lazy"
+                />
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__inner">
+        <a href="/" class="footer__logo logo">
+          <img
+            src="./images/logo-dark.svg"
+            alt="Tere"
+            class="logo__image"
+            loading="lazy"
+            width="131"
+            height="38"
+          />
+        </a>
+        <div class="footer__contacts">
+          <h3 class="footer__contacts-title">Be Our Friend</h3>
+          <address class="footer__contacts-body">
+            <p>3, Season Park, Jakarta</p>
+            <p><a href="mailto:support@foodyar.com">support@foodyar.com</a></p>
+            <p><a href="tel:02111112222">021-1111-2222</a></p>
+          </address>
+        </div>
+        <div class="footer__contacts hidden-mobile">
+          <h3 class="footer__contacts-title">Be Our Friend</h3>
+          <address class="footer__contacts-body">
+            <p>3, Season Park, Jakarta</p>
+            <p><a href="mailto:support@foodyar.com">support@foodyar.com</a></p>
+            <p><a href="tel:02111112222">021-1111-2222</a></p>
+          </address>
+        </div>
+        <div class="footer__button-group">
+          <button class="footer__button button button-android">DOWNLOAD</button>
+          <button class="footer__button button button-ios">DOWNLOAD</button>
+        </div>
+      </div>
+      <div class="footer__extra">
+        <p class="footer__copyright">
+          All Rights Reserved tere by Codematics <time>2022</time>
+        </p>
+      </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-ovarlay__item">
+            <a href="/" class="mobile-ovarlay__link"> Home </a>
+          </li>
+          <li class="mobile-ovarlay__item">
+            <a href="/" class="mobile-ovarlay__link"> How tere works </a>
+          </li>
+          <li class="mobile-ovarlay__item">
+            <a href="/" class="mobile-ovarlay__link"> Tere benefits </a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

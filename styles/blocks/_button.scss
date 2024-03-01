@@ -1,0 +1,76 @@
+.button {
+    @include reset-button;
+    @include flex-center(true);
+
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    font-size: clamp(14px, 1.875vw, 24px);
+    font-weight: 800;
+    max-width: 280px;
+    height: var(--input-height);
+    border-radius: var(--border-radius-medium);
+    flex-shrink: 0;
+    padding: 12px 32px;
+
+    @include mobile {
+        padding: 7px 18px;
+        height: 38px;
+        width: 151px;
+    }
+
+    &--small {
+        font-size: 22px;
+        font-weight: 600;
+        background-color: var(--color-green);
+        height: 50px;
+        width: 182px;
+        padding: 0;
+
+        @include desktop {
+            font-size: 20px;
+            height: 45px;
+            padding: 10px 24px;
+        }
+    }
+
+    @include hover {
+        background-color: var(--color-grey);
+        color: var(--color-dark);
+    }
+
+    &-android {
+        position: relative;
+
+        &::before {
+            @include square(30px);
+
+            content: '';
+            background-image: url('../../icons/google-play.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+
+            @include mobile {
+                @include square(20px);
+            }
+        }
+    }
+
+    &-ios {
+        position: relative;
+
+        &::before {
+            @include square(30px);
+
+            content: '';
+            background-image: url('../../icons/app-store.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+
+            @include mobile {
+                @include square(20px);
+            }
+        }
+    }
+}
